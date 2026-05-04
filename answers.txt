@@ -1,0 +1,14 @@
+# Vehicle Workshop – Long Question Answer
+# Do NOT remove these comments or change the format.
+
+# ============================================================
+# QUESTION:
+# Based on the system you have implemented, write a brief
+# problem statement that could have motivated its development.
+# Your statement should explain:
+#   1. What problem the system is solving
+#   2. Who would use it
+#   3. What it enables them to do that they could not do before
+# ============================================================
+
+# YOUR ANSWER (write below this line):
