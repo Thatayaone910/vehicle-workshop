@@ -17,8 +17,9 @@ import java.util.List;
 public class ServiceJob {
 
     // TODO Step 2a: Declare a private String field called `name`
-
+    private String name;
     // TODO Step 2b: Declare a private List<Part> field called `parts`
+    private List<Part> parts;
 
     /**
      * Constructs a ServiceJob with the given name and initial parts list.
@@ -30,11 +31,15 @@ public class ServiceJob {
      * @param name     the display name of the service job (e.g. "Full Brake Service")
      * @param partList the initial list of parts required
      */
-    public ServiceJob(String name, List<Part> partList) {
-        // TODO Step 2c: Assign name → this.name
-        // TODO Step 2d: Store a NEW ArrayList copy of partList into this.parts
-        //               Hint: new ArrayList<>(partList)
+    // TODO Step 2c: Assign name → this.name
+    // TODO Step 2d: Store a NEW ArrayList copy of partList into this.parts
+    //               Hint: new ArrayList<>(partList)
+
+    public ServiceJob(String name, List<Part> parts) {
+        this.name = name;
+        this.parts = new ArrayList<>(parts);
     }
+
 
     /**
      * Returns the service job name.
@@ -43,7 +48,7 @@ public class ServiceJob {
      */
     public String name() {
         // TODO Step 2e: Return name
-        return null;
+        return name;
     }
 
     /**

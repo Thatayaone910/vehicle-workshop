@@ -12,8 +12,12 @@ package za.co.bhunganecodes.workshop.model;
 public class Part {
 
     // TODO Step 1a: Declare a private String field called `name`
+    private String name;
+
 
     // TODO Step 1b: Declare a private double field called `quantity`
+    private double quantity;
+
 
     /**
      * Constructs a Part with the given name and quantity.
@@ -23,7 +27,10 @@ public class Part {
      */
     public Part(String partName, double partQuantity) {
         // TODO Step 1c: Assign partName  → name
+        this.name = partName;
         // TODO Step 1d: Assign partQuantity → quantity
+        this.quantity = partQuantity;
+
     }
 
     /**
@@ -31,9 +38,10 @@ public class Part {
      *
      * @return the name of this part
      */
+
     public String name() {
         // TODO Step 1e: Return name
-        return null;
+        return name;
     }
 
     /**
@@ -53,8 +61,10 @@ public class Part {
      * @throws IllegalArgumentException if {@code newQuantity} is negative
      */
     public void updateQuantity(double newQuantity) {
-        // TODO Step 1g: If newQuantity < 0, throw new IllegalArgumentException with a meaningful message
-        // TODO Step 1h: Otherwise, assign newQuantity → quantity
+        if (newQuantity < 0 )
+        { throw new IllegalArgumentException("Cannot be negative");}
+
+        else {this.quantity = newQuantity;}
     }
 
     /**
@@ -68,6 +78,8 @@ public class Part {
     @Override
     public String toString() {
         // TODO Step 1i: Return "<name>: <quantity> units"  e.g. "Brake Pads: 4.0 units"
-        return null;
+        return name + ":" + quantity + "units";
     }
+
+
 }
